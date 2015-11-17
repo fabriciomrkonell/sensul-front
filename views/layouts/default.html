@@ -3,12 +3,18 @@
   {% include '../includes/head.html' %}
   <body class="ng-cloak">
 
+    {% include '../includes/menu.html' %}
+
     {% include '../includes/libraries.html' %}
 
-    <!-- imports pages -->
-    {% for page in requiresPage %}
-      {% include page %}
-    {% endfor %}
+    <div class="container-view">
+
+      <!-- imports pages -->
+      {% for page in requiresPage %}
+        {% include page %}
+      {% endfor %}
+
+    </div>
 
     <!-- imports js -->
     {% for js in requiresJS %}

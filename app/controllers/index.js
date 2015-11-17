@@ -7,7 +7,7 @@
 	indexCtrl.$inject = ['$scope'];
 
 	function indexCtrl($scope) {
-		alert('dasd');
+
   }
 
 }());
