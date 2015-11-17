@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, '/')));
 app.engine('html', swig.renderFile);
 app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
-app.set('view cache', false);
+app.set('view cache', true);
 swig.setDefaults({ cache: false });
 
 app.use('/', routes);

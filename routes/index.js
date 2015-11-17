@@ -11,11 +11,11 @@ router.get('/', function(req, res, next) {
   });
 });
 
-router.get('/about', function(req, res, next) {
+router.get('/realtime', function(req, res, next) {
   res.render('layouts/default', {
-  	title: 'About',
-  	page: '../about.html',
-  	requiresJS: ['app/controllers/about']
+  	title: 'Tempo real',
+  	page: '../realtime.html',
+  	requiresJS: ['app/controllers/realtime', 'app/libraries/bootstraptreeview/js/bootstraptreeview.min']
   });
 });
 
