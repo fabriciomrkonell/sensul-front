@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  {% include '../includes/head.html' %}
+  <body class="ng-cloak">
+
+    {% include '../includes/libraries.html' %}
+
+    <!-- imports pages -->
+    {% for page in requiresPage %}
+      {% include page %}
+    {% endfor %}
+
+    <!-- imports js -->
+    {% for js in requiresJS %}
+      <script src="{{js}}.js"></script>
+    {% endfor %}
+
+  </body>
+</html>
