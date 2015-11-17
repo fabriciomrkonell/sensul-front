@@ -7,13 +7,11 @@
 
     {% include '../includes/libraries.html' %}
 
+    <!-- import page -->
     <div class="container-view">
-
-      <!-- imports pages -->
-      {% for page in requiresPage %}
+      <div class="col-sm-12">
         {% include page %}
-      {% endfor %}
-
+      </div>
     </div>
 
     <!-- imports js -->
