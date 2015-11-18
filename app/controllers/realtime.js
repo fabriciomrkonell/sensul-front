@@ -14,7 +14,6 @@
 			  state: {
 			    expanded: false,
 			  },
-  			tags: ['available'],
   			nodes: [
 		      {
 		        text: "Child 1",
