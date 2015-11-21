@@ -5,3 +5,12 @@
 .navbar-right{
 	margin-right: 15px;
 }
+
+#logo-menu{
+	width: 140px;
+  margin-top: -9px;
+}
+
+.row-top{
+	margin-top: 15px;
+}
