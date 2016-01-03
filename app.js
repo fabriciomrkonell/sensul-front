@@ -8,6 +8,7 @@ var express = require('express'),
     swig = require('swig');
 
 var routes = require('./routes/index'),
+    routes_transductor = require('./routes/transductor'),
     app = express();
 
 app.use(logger('dev'));
@@ -23,6 +24,7 @@ app.set('view cache', true);
 swig.setDefaults({ cache: false });
 
 app.use('/', routes);
+app.use('/transductor', routes_transductor);
 
 app.use(function(req, res, next) {
   var err = new Error('Não encontrado!');
